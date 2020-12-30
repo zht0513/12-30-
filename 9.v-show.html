@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<div id="app">-->
+
+<!--</div>-->
+<!--<script src="js/vue.min.js"></script>-->
+<!--<script>-->
+<!--    new Vue({-->
+<!--        el:'#app',-->
+<!--        data:{-->
+<!--            msg:'上课一定好好听课',-->
+<!--            isShow: true,-->
+<!--            count: 23,-->
+<!--        },-->
+<!--        methods:{-->
+<!--            showMSG(){-->
+<!--                this.isShow = !this.isShow;-->
+<!--            },-->
+<!--            changeCount() {-->
+<!--                this.count&#45;&#45;;-->
+<!--            },-->
+<!--        }-->
+<!--    })-->
+<!--</script>-->
+
+<div id="app">
+
+</div>
+<script src="js/vue.min.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            msg: '上课一定好好听课',
+            isShow: true,
+            count: 23,
+        },
+        methods: {
+            showMSG() {
+                this.isShow = !this.isShow;
+            },
+            changeCount() {
+                this.count--;
+            },
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<div id="app">-->
+<!--    <input type="text" v-model="msg">-->
+<!--    <input type="button" value="发表到留言板" @click="add_note">-->
+<!--    <ul>-->
+<!--        <li v-for="(value, index) in notebook" :key="index">-->
+<!--            <span>{{value}}</span><a href="javascript:;" @click="delNote(index)">删除</a>-->
+<!--        </li>-->
+<!--    </ul>-->
+
+<!--    <span>总数量：{{notebook.length}}条</span>-->
+<!--    <input type="button" value="清空留言板" @click="delAll" v-show="notebook.length != 0">-->
+<!--</div>-->
+<!--<script src="js/vue.min.js"></script>-->
+<!--<script>-->
+<!--    new Vue({-->
+<!--        el: '#app',-->
+<!--        data: {-->
+<!--            notebook: [],-->
+<!--            msg: '',-->
+<!--        },-->
+<!--        methods: {-->
+<!--            add_note() {-->
+<!--                let msg = this.msg;-->
+<!--                if (msg) {-->
+<!--                    this.notebook.unshift(this.msg)-->
+<!--                }-->
+<!--                this.msg = ""-->
+<!--            },-->
+<!--            delNote(index) {-->
+<!--                console.log(index);-->
+<!--                this.notebook.splice(index, 3)-->
+<!--            },-->
+<!--            delAll() {-->
+<!--                this.notebook = [];-->
+<!--            },-->
+<!--        }-->
+<!--    })-->
+<!--</script>-->
+
+
+<div id="app">
+    <input type="text" v-model="msg">
+    <input type="button" value="发表到留言板" @click="add_note">
+    <ul>
+        <li v-for="(value, index) in notebook" :key="index">
+            <span>{{value}}</span><a href="javascript:;" @click="delNote(index)">删除</a>
+        </li>
+    </ul>
+
+    <span>总数量：{{notebook.length}}条</span>
+    <input type="button" value="清空留言板" @click="delAll" v-show="notebook.length != 0">
+</div>
+<script src="js/vue.min.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            notebook: [],
+            msg: '',
+        },
+        methods: {
+            add_note() {
+                let msg = this.msg;
+                if (msg) {
+                    this.notebook.unshift(this.msg)
+                }
+                this.msg = ""
+            },
+            delNote(index) {
+                console.log(index);
+                this.notebook.splice(index, 3)
+            },
+            delAll() {
+                this.notebook = [];
+            },
+        }
+    })
+</script>
+</body>
+</html>

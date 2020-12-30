@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<div id="app">-->
+<!--    <h3>{{count}}</h3>-->
+<!--    <input type="button" value="修改count的值" @click="change_count(80,'tom')">-->
+<!--    <p @click="click_me()">点击</p>-->
+<!--    <p @click="click_me2">点击</p>-->
+<!--</div>-->
+<!--<script src="js/vue.min.js"></script>-->
+<!--<script>-->
+<!--    new Vue({-->
+<!--        el: '#app',-->
+<!--        data: {-->
+<!--            count: 40,-->
+<!--        },-->
+<!--        methods:{-->
+<!--            change_count(number,name){-->
+<!--                console.log(name);-->
+<!--                this.log(name);-->
+<!--            },-->
+<!--            click_me(){-->
+<!--                console.log(event);-->
+<!--            },-->
+<!--            click_me2(){-->
+<!--                console.log(event);-->
+<!--            }-->
+<!--        }-->
+<!--    })-->
+<!--</script>-->
+
+<div id="app">
+    <h3>{{count}}</h3>
+    <input type="button" value="修改count的值" @click="change_count(80,'tom')">
+    <p @click="click_me()">点击</p>
+    <p @click="click_me2">点击</p>
+</div>
+<script src="js/vue.min.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            count: 40,
+        },
+        methods:{
+            change_count(number,name){
+                console.log(name);
+                this.log(name);
+            },
+            click_me(){
+                console.log(event);
+            },
+            click_me2(){
+                console.log(event);
+            }
+        }
+    })
+</script>
+</body>
+</html>
