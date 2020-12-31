@@ -31,7 +31,7 @@
 <!--</script>-->
 
 <div id="app">
-    <img src="src" :title="name" :class="{aa: showCss}" alt="">
+    <img :src="src" :title="name" :class="{aa: showCss}" alt="">
     <input type="button" value="动态加入图片样式" @click="addCss">
     <input type="button" value="切换图片" @click="changeImg">
 </div>
@@ -42,7 +42,7 @@
         data:{
             name:'二哈',
             showCss: true,
-            src: 'https://dss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1884047996,2704209208&fm=26&gp=0.jpg';
+            src: 'https://dss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1884047996,2704209208&fm=26&gp=0.jpg',
         },
         methods: {
             addCss(){
